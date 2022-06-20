@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F14CABB6-23C6-4FCC-92A5-E331D1BFA95C}</ProjectGuid>
+    <ProjectGuid>{EB2590AD-9A1D-42FF-98E7-EF1E86A99076}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Дельта_кодирование</RootNamespace>
-    <AssemblyName>Дельта-кодирование</AssemblyName>
+    <RootNamespace>Пазл_F</RootNamespace>
+    <AssemblyName>Пазл F</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="read.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

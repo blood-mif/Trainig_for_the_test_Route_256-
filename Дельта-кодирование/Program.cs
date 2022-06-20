@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Дельта_кодирование
 {
@@ -10,6 +7,15 @@ namespace Дельта_кодирование
     {
         static void Main(string[] args)
         {
+            var encodingLenght = int.Parse(Console.ReadLine());
+            var dataCoding = Console.ReadLine().Split(' ').Select(it => int.Parse(it)).ToArray();
+            var dataEnCoding = new int[dataCoding.Length + 1];
+            for (int i = 0; i < dataCoding.Length; i++)
+                dataEnCoding[i + 1] = dataCoding[i] + dataEnCoding[i];
+            while (dataEnCoding.Min() < 0)
+                dataEnCoding = dataEnCoding.Select(x => { x = x + 1; return x; }).ToArray();
+            for (int i = 0; i < dataEnCoding.Length; i++)
+                Console.Write(dataEnCoding[i] + " ");
         }
     }
 }

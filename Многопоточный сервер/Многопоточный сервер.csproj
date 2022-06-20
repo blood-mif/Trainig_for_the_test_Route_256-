@@ -7,7 +7,7 @@
     <ProjectGuid>{E7B62023-FECD-4D04-97ED-41B6A5F32E4C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Многопоточный_сервер</RootNamespace>
-    <AssemblyName>Многопоточный_сервер</AssemblyName>
+    <AssemblyName>Многопоточный сервер</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

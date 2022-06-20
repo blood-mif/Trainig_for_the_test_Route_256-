@@ -7,7 +7,7 @@
     <ProjectGuid>{097AA346-FB9A-4B63-AAD5-4DB7199280E3}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Двумерная_игра</RootNamespace>
-    <AssemblyName>Двумерная_игра</AssemblyName>
+    <AssemblyName>Двумерная игра</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

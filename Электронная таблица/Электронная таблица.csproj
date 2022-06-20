@@ -7,7 +7,7 @@
     <ProjectGuid>{CB13D878-99EB-4820-B4ED-842DAE9BA05B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Электронная_таблица</RootNamespace>
-    <AssemblyName>Электронная_таблица</AssemblyName>
+    <AssemblyName>Электронная таблица</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
