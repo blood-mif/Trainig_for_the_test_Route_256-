@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB13D878-99EB-4820-B4ED-842DAE9BA05B}</ProjectGuid>
+    <ProjectGuid>{BCCCBA54-D0B8-414D-AE55-EB74C1D6C1AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Электронная_таблица</RootNamespace>
-    <AssemblyName>Электронная таблица</AssemblyName>
+    <RootNamespace>B.Палиндромные_числа</RootNamespace>
+    <AssemblyName>B.Палиндромные_числа</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

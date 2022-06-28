@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB13D878-99EB-4820-B4ED-842DAE9BA05B}</ProjectGuid>
+    <ProjectGuid>{0CFA66CC-0012-4ADF-B70E-CA9BF48DC538}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Электронная_таблица</RootNamespace>
-    <AssemblyName>Электронная таблица</AssemblyName>
+    <RootNamespace>D.Подсистема_регистрации</RootNamespace>
+    <AssemblyName>D.Подсистема_регистрации</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
