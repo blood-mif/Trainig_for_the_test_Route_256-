@@ -29,7 +29,7 @@ namespace D.Подсистема_регистрации
         }
             public static bool StringIsValid(string str)
         {
-            return !string.IsNullOrEmpty(str) && !Regex.IsMatch(str, @"(^[^0-9a-zA-Z_]|[^0-9a-zA-Z_-])");
+            return !string.IsNullOrEmpty(str) && !Regex.IsMatch(str, @"(^[^0-9a-zA-Z_]|[^0-9a-zA-Z_-]){2,22}");
         }
     }
 }

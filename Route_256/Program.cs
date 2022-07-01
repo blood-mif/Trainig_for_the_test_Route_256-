@@ -6,6 +6,16 @@ class Program
 {
     static void Main()
     {
+        var nn = int.Parse(Console.ReadLine());
+        for (int i = 0; i < nn; i++)
+        {
+        var array = Console.ReadLine().Split(' ').Select(it => int.Parse(it)).ToArray();
+            int sum = array[0] + array[1];
+            Console.WriteLine(sum);
+        }
+
+
+
         // Example dictionary.
         var dictionary = new Dictionary<string, int>(5);
         dictionary.Add("cat", 1);
