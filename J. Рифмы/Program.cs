@@ -1,39 +1,93 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace J.Рифмы
 {
-    class Program
+    public class Node
+    {
+        public char s;
+        public List<Node> next;
+    }
+
+    public class j
     {
         static void Main(string[] args)
         {
-            var desk = Convert.ToInt32(Console.ReadLine());
-            List<string> lstDesk = new List<string>();
-            List<string> lstRequest = new List<string>();
-            for (int i = 0; i < desk; i++)
+            int t = Convert.ToInt32(Console.ReadLine());
+            Node tree = new Node();
+            tree.next = new List<Node>();
+
+            for (int i = 0; i < t; ++i)
             {
-                lstDesk.Add(Console.ReadLine());
+                string word = Console.ReadLine();
+                Node curr = tree;
+
+                for (int j = word.Length - 1; j >= 0; --j)
+                {
+                    Node next = null;
+                    foreach (var n in curr.next)
+                    {
+                        if (n.s == word[j])
+                        {
+                            next = n;
+                            break;
+                        }
+                    }
+
+                    if (next == null)
+                    {
+                        next = new Node();
+                        next.next = new List<Node>();
+                        next.s = word[j];
+                        curr.next.Add(next);
+                    }
+
+                    curr = next;
+                }
             }
-            var requestRepeat = Convert.ToInt32(Console.ReadLine());
-            for (int i = 0; i < requestRepeat; i++)
+
+            int count = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < count; ++i)
             {
-                List<string> ddd = new List<string>(lstDesk);
-                var request = Console.ReadLine();
-                //lstRequest.Add(Console.ReadLine());
-                try
-                {
-                    ddd.Remove(request);
-                }
-                catch (Exception)
-                {
+                string res = "";
+                string word = Console.ReadLine();
+                Node curr = tree;
 
+                for (int j = word.Length - 1; j >= 0; --j)
+                {
+                    Node next = null;
+
+                    foreach (var n in curr.next)
+                    {
+                        if (n.s == word[j])
+                        {
+                            next = n;
+                            res += n.s;
+                            break;
+                        }
+                    }
+
+                    if (next == null)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        curr = next;
+                    }
                 }
 
-                findR()
-                
+                while (curr.next.Count != 0)
+                {
+                    if (curr.next.Count != 0)
+                        res += curr.next[0].s;
+
+                    curr = curr.next[0];
+                }
+
+                for (int j = 0; j < res.Length; ++j)
+                    Console.Write(res[res.Length - 1 - j]);
+                Console.WriteLine();
             }
         }
     }
